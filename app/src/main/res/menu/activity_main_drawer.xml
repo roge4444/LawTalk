@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="首頁" />
+        <item
+            android:id="@+id/nav_ask"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="即時法律諮詢" />
+        <item
+            android:id="@+id/nav_brain"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="法律金頭腦" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="經驗分享區" />
+        <item
+            android:id="@+id/nav_fans"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="前往LawTalk粉絲團" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_menu_send"
+            android:title="離開LawTalk" />
+    </group>
+
+</menu>
