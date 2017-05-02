@@ -18,25 +18,24 @@
         android:textSize="30sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.507" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="285dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="330dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="16dp"
         android:text="Hello World!!"
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="286dp"
+        android:layout_width="285dp"
         android:layout_height="44dp"
         android:layout_marginTop="16dp"
         android:ems="10"
@@ -68,5 +67,18 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="293dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Test for Bluemix Watson Voice Text to Speech"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="485dp" />
 
 </android.support.constraint.ConstraintLayout>

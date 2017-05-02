@@ -17,11 +17,26 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Button;
 
+import com.ibm.watson.developer_cloud.android.library.audio.StreamPlayer;
+import com.ibm.watson.developer_cloud.text_to_speech.v1.TextToSpeech;
+import com.ibm.watson.developer_cloud.text_to_speech.v1.model.Voice;
+
 public class MainActivity extends Navigation_BaseActivity{
 
     TextView textView;
     EditText editText;
     Button button;
+
+    StreamPlayer streamPlayer;
+
+    private TextToSpeech initTextToSpeechService(){
+        TextToSpeech service = new TextToSpeech();
+        String username = "69b22066-cc6f-4df0-835b-177ebfe1b42e";
+        String password = "xMYK14GZkzqI";
+        service.setUsernameAndPassword(username,password);
+        return service;
+    }
+
 
     private class WatsonTask extends AsyncTask<String, Void, String>{
         @Override
@@ -32,6 +47,11 @@ public class MainActivity extends Navigation_BaseActivity{
                     textView.setText("running the Watson thread");
                 }
             });
+
+            TextToSpeech textToSpeech = initTextToSpeechService();
+            streamPlayer = new StreamPlayer();
+            streamPlayer.playStream(textToSpeech.synthesize(String.valueOf(editText.getText()), Voice.EN_MICHAEL).execute());
+
             return "text to speech done";
         }
         @Override
