@@ -31,12 +31,13 @@ public class MainActivity extends Navigation_BaseActivity{
 
     private TextToSpeech initTextToSpeechService(){
         TextToSpeech service = new TextToSpeech();
-        String username = "69b22066-cc6f-4df0-835b-177ebfe1b42e";
-        String password = "xMYK14GZkzqI";
+        String username = "ee305cf4-4799-4da3-8501-450c2d22a7dd";
+        String password = "YlQZIAfhYwcX";
         service.setUsernameAndPassword(username,password);
         return service;
     }
 
+    TextToSpeech textToSpeech;
 
     private class WatsonTask extends AsyncTask<String, Void, String>{
         @Override
@@ -48,9 +49,9 @@ public class MainActivity extends Navigation_BaseActivity{
                 }
             });
 
-            TextToSpeech textToSpeech = initTextToSpeechService();
+
             streamPlayer = new StreamPlayer();
-            streamPlayer.playStream(textToSpeech.synthesize(String.valueOf(editText.getText()), Voice.EN_MICHAEL).execute());
+            streamPlayer.playStream(textToSpeech.synthesize(editText.getText().toString(), Voice.EN_MICHAEL).execute());
 
             return "text to speech done";
         }
@@ -67,6 +68,8 @@ public class MainActivity extends Navigation_BaseActivity{
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("LawTalk - 首頁");
         setUpAll(toolbar);
+
+        textToSpeech = initTextToSpeechService();
 
         editText = (EditText) findViewById(R.id.editText);
         button = (Button) findViewById(R.id.button);

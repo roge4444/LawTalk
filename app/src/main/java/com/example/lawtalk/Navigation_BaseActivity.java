@@ -88,7 +88,7 @@ public class Navigation_BaseActivity extends AppCompatActivity
             overridePendingTransition(0, 0);
             finish();
         } else if (id == R.id.nav_ask) {
-            Intent intent = new Intent();
+            ;Intent intent = new Intent();
             intent.setClass(Navigation_BaseActivity.this, AskActivity.class);
             startActivity(intent);
             overridePendingTransition(0, 0);

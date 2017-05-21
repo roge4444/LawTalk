@@ -32,9 +32,14 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
     compile 'com.android.support:design:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.squareup.okhttp3:okhttp-ws:3.4.2'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.ibm.watson.developer_cloud:java-sdk:3.7.2'
+    compile 'com.ibm.watson.developer_cloud:android-sdk:0.2.3'
+
     testCompile 'junit:junit:4.12'
-    compile files('libs/jna.jar')
-    compile files('libs/java-sdk-3.3.1-jar-with-dependencies.jar')
 }
