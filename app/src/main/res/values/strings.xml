@@ -8,4 +8,5 @@
     <string name="title_activity_ask">AskActivity</string>
     <string name="title_activity_brain">BrainActivity</string>
     <string name="title_activity_share">ShareActivity</string>
+    <string name="what_s_on_your_mind">What\'s on your mind?</string>
 </resources>
