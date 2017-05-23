@@ -31,8 +31,8 @@ public class MainActivity extends Navigation_BaseActivity{
 
     private TextToSpeech initTextToSpeechService(){
         TextToSpeech service = new TextToSpeech();
-        String username = "ee305cf4-4799-4da3-8501-450c2d22a7dd";
-        String password = "YlQZIAfhYwcX";
+        String username = "afbf1a34-aa29-4b24-b737-e412228acea2";
+        String password = "OHexP6LOgaY8";
         service.setUsernameAndPassword(username,password);
         return service;
     }
